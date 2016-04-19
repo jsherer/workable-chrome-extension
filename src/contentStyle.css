@@ -1,0 +1,58 @@
+.breezy-blind-toggled .candidiate-scorecards-container .section:first-child,
+.breezy-blind-toggled .candidiate-scorecards-container .section:first-child + .section,
+.breezy-blind-toggled .candidate-info .star
+{
+    display:none;
+}
+
+.breezy-blind-toggled .avatar, 
+.breezy-blind-toggled .activity-body {
+    -webkit-filter: blur(2px) grayscale(100%);
+}
+
+.breezy-blind-toggled .main .candidate-list .candidate .score,
+.breezy-blind-toggled .main .candidate-list .candidate .score.good,
+.breezy-blind-toggled .main .candidate-list .candidate .score.poor,
+.breezy-blind-toggled .modal-content .candidate-view-container .candidate-header .score,
+.breezy-blind-toggled .modal-content .candidate-view-container .candidate-header .score.poor,
+.breezy-blind-toggled .modal-content .candidate-view-container .candidate-header .score.good,
+.breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score,
+.breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score.good,
+.breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score.poor {
+    display:none;
+    color:black;
+    background:white;
+    -webkit-filter: blur(2px);
+}
+
+.breezy-blind-toggled .main .candidate-list .candidate,
+.breezy-blind-toggled .main .candidate-list .candidate.good,
+.breezy-blind-toggled .main .candidate-list .candidate.poor
+{
+    background:#FFF !important;
+}
+
+.breezy-blind-toggled .main .candidate-list .candidate .candidate-header .starred,
+.breezy-blind-toggled .main .candidate-list .candidate .candidate-footer .starred,
+.breezy-blind-toggled .main .candidate-list .candidate .candidate-header .fa-star,
+.breezy-blind-toggled .main .candidate-list .candidate .candidate-footer .fa-star
+{
+    color:#666 !important;
+    border:none;
+    text-shadow:none;
+    -webkit-text-stroke:none;
+    -webkit-text-stroke-width:0px;
+}
+
+.breezy-blind-toggled .candidate-conversation .activity-body {
+    -webkit-filter:none !important;
+}
+
+
+.breezy-blind-toggled .color-bars .good,
+.breezy-blind-toggled .color-bars .poor,
+.breezy-blind-toggled .main .candidate-list .candidate .candidate-color-bar-container .color-bars li .bar.poor,
+.breezy-blind-toggled .main .candidate-list .candidate .candidate-color-bar-container .color-bars li .bar.good {
+    color:#2980b9;
+    background:#2980b9;
+}
