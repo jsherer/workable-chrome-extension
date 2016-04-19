@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
 
   "name": "Breezy.hr Blind",
   "description": "Toggle visibility of scorecards and comments of Breezy.hr to help combat group bias during hiring.",
