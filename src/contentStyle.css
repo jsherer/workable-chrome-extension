@@ -56,3 +56,7 @@
     color:#2980b9;
     background:#2980b9;
 }
+
+.superhero-name { display:none; }
+.breezy-blind-toggled .original-name { display:none; }
+.breezy-blind-toggled .superhero-name { display:inline-block; }
