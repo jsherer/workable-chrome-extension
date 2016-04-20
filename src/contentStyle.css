@@ -1,6 +1,5 @@
 .breezy-blind-toggled .candidiate-scorecards-container .section:first-child,
-.breezy-blind-toggled .candidiate-scorecards-container .section:first-child + .section,
-.breezy-blind-toggled .candidate-info .star
+.breezy-blind-toggled .candidiate-scorecards-container .section:first-child + .section
 {
     display:none;
 }
@@ -32,6 +31,7 @@
     background:#FFF !important;
 }
 
+/*
 .breezy-blind-toggled .main .candidate-list .candidate .candidate-header .starred,
 .breezy-blind-toggled .main .candidate-list .candidate .candidate-footer .starred,
 .breezy-blind-toggled .main .candidate-list .candidate .candidate-header .fa-star,
@@ -43,6 +43,7 @@
     -webkit-text-stroke:none;
     -webkit-text-stroke-width:0px;
 }
+*/
 
 .breezy-blind-toggled .candidate-conversation .activity-body {
     -webkit-filter:none !important;
