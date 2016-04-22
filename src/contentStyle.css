@@ -1,3 +1,5 @@
+.modal-content .candidate-view-container .candidate-experience br { display: inline !important; content: ' ' !important; }
+
 .breezy-blind-toggled .candidiate-scorecards-container .section:first-child,
 .breezy-blind-toggled .candidiate-scorecards-container .section:first-child + .section
 {
