@@ -58,7 +58,11 @@
 .breezy-blind-toggled .modal-content .candidate-view-container .candidate-header .score.good,
 .breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score,
 .breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score.good,
-.breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score.poor {
+.breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score.poor,
+.breezy-blind-toggled .main .candidates-table table tr span.score,
+.breezy-blind-toggled .main .candidates-table table tr span.score.good,
+.breezy-blind-toggled .main .candidates-table table tr span.score.poor
+{
     display:none;
     color:black;
     background:white;
@@ -67,7 +71,10 @@
 
 .breezy-blind-toggled .main .candidate-list .candidate,
 .breezy-blind-toggled .main .candidate-list .candidate.good,
-.breezy-blind-toggled .main .candidate-list .candidate.poor
+.breezy-blind-toggled .main .candidate-list .candidate.poor,
+.breezy-blind-toggled .main .candidates-table table .candidate,
+.breezy-blind-toggled .main .candidates-table table .candidate.good,
+.breezy-blind-toggled .main .candidates-table table .candidate.poor
 {
     background:#FFF !important;
 }

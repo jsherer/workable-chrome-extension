@@ -48,6 +48,25 @@ new (function() {
             span.text(superHero);
             span.prependTo($(this));
         });
+
+        $(".candidates-table td.name a").filter(':not([data-x])').each(function(){
+            $(this).attr('data-x', 'yes');
+            
+            var name = $(this).text();
+            var superHero = generateName(name);
+
+            $(this).empty();
+
+            var original = $("<span/>", {'class':'original-name'});
+            original.text(name);
+            original.prependTo($(this));
+
+            var span = $("<span/>", {'class':'superhero-name'});
+            span.text(superHero);
+            span.prependTo($(this));
+        });
+
+        
 	}
 
 	function init() {
