@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Breezy.hr Blind",
-  "description": "Toggle visibility of scorecards and comments of Breezy.hr to help combat group bias during hiring.",
-  "version": "1.0.7",
+  "name": "Workable Blind",
+  "description": "Toggle visibility of scorecards and comments of Workable to help combat group bias during hiring.",
+  "version": "1.0.0",
 
   "icons": {
     "16": "assets/icon16.png",
@@ -25,7 +25,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://breezy.hr/*"],
+      "matches": ["*://zapier.workable.com/*"],
       "css": ["contentStyle.css"],
       "js": ["libs/jquery.min.js", "libs/md5.js", "contentScript.js"]
     }

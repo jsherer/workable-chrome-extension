@@ -5,10 +5,10 @@ var eventPage = new (function() {
             chrome.tabs.executeScript(tab.id, {
                 code:[
                   "var cn = document.body.className;",
-                  "if(/breezy-blind-toggled/.test(cn)){",
-                      "document.body.className = cn.replace(/\s*breezy-blind-toggled/g, '');",
+                  "if(/workable-blind-toggled/.test(cn)){",
+                      "document.body.className = cn.replace(/\s*workable-blind-toggled/g, '');",
                   "}else{",
-                      "document.body.className += ' breezy-blind-toggled';",
+                      "document.body.className += ' workable-blind-toggled';",
                   "}"
                 ].join('\n')
             });

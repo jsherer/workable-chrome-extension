@@ -1,40 +1,37 @@
-.modal-content .candidate-view-container .candidate-experience br { display: inline !important; content: ' ' !important; }
+.superhero-name { display:none; }
+.workable-blind-toggled .original-name { display:none; }
+.workable-blind-toggled .superhero-name { display:inline-block; }
 
-.breezy-blind-toggled .candidiate-scorecards-container .section:first-child,
-.breezy-blind-toggled .candidiate-scorecards-container .section:first-child + .section
+.workable-blind-toggled .candidate__name a:not([data-x="yes"]),
+.workable-blind-toggled span.js-name:not([data-x="yes"]),
+.workable-blind-toggled .flag__section strong:not([data-x="yes"]),
+.workable-blind-toggled h4.inline-block:not([data-x="yes"]),
+.workable-blind-toggled .profile__subsection--social-profiles a:not([data-x="yes"]) {
+    opacity:0;
+}
+
+.workable-blind-toggled .avatar-mini,
+.workable-blind-toggled .avatar-small,
+.workable-blind-toggled .avatar-medium,
+.workable-blind-toggled .avatar-large,
+.workable-blind-toggled .avatar-jumbo,
+.workable-blind-toggled .search-result__container img {
+    -webkit-filter: blur(3px) grayscale(100%);    
+}
+.workable-blind-toggled .rating-summary,
+.workable-blind-toggled .rating-widget {
+    visibility:hidden;
+}
+.workable-blind-toggled .icon-thumb-down,
+.workable-blind-toggled .icon-thumb-up {
+    display:none;
+}
+
+.workable-blind-toggled .message-text,
+.workable-blind-toggled dt.email + .js-highlight { position:relative; color:white; }
+.workable-blind-toggled .message-text p:after,
+.workable-blind-toggled dt.email + .js-highlight:after
 {
-    display:none;
-}
-
-.breezy-blind-toggled .avatar {
-    -webkit-filter: blur(2px) grayscale(100%);
-}
-.breezy-blind-toggled .content-section:not(.candidate-conversation) .activity-body {
-    overflow:hidden;
-}
-.breezy-blind-toggled .content-section:not(.candidate-conversation) .activity-body p {
-    position:relative;
-    color:#fafafa;
-    background-color:#fafafa;
-    -webkit-filter: blur(2px);
-}
-.breezy-blind-toggled .content-section:not(.candidate-conversation) .activity-body p ~ p {
-    display:none;
-}
-.breezy-blind-toggled .content-section:not(.candidate-conversation) .activity-body:after {
-    display:block;
-    content:" ";
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:12px;
-    height:15px;
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(250,250,250,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(250,250,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(250,250,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF00', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
-}
-.breezy-blind-toggled .content-section:not(.candidate-conversation) .activity-body p:after {
     display:block;
     position:absolute;
     content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc magna, faucibus sit amet dictum in, finibus vitae est. Proin ac orci sagittis purus auctor pharetra eu scelerisque ante. Donec a hendrerit erat, id hendrerit libero. Nullam non consectetur justo, a molestie quam. Nullam sed nulla non massa interdum scelerisque. Aliquam ut sem risus. Nullam neque massa, maximus sit amet vehicula eu, consequat vitae odio. Integer eget nunc porta, volutpat mauris id, efficitur nisi. Nunc nibh urna, consectetur vel est et, consequat tincidunt sem. Aenean ullamcorper dui sed augue ultrices, ac porttitor nibh rutrum. Pellentesque iaculis purus ac sem euismod, sit amet blandit lacus bibendum. Fusce in dui sapien. Vestibulum quis ex id mi semper semper. Praesent imperdiet dignissim maximus. Vestibulum id elementum mauris. Maecenas velit ex, scelerisque at metus nec, congue interdum lacus. Nam viverra, ex sed posuere pretium, nisl orci ornare arcu, eget bibendum ipsum turpis id risus. Integer vel libero eget nisl accumsan varius. Mauris aliquam, neque sit amet tristique lobortis, augue quam lacinia nulla, sed sodales massa augue a massa. Maecenas ut venenatis ex. Curabitur et massa commodo ex posuere sagittis. Aliquam porttitor in purus et dapibus." !important;
@@ -42,70 +39,12 @@
     left:0;
     right:0;
     bottom:0;
+    text-indent:5px;
     font-size: 12px;
     font-weight: normal;
     background:white;
     color:#333;
+    overflow:hidden;
     z-index:1000;
     -webkit-filter: blur(2px);
 }
-
-.breezy-blind-toggled .main .candidate-list .candidate .score,
-.breezy-blind-toggled .main .candidate-list .candidate .score.good,
-.breezy-blind-toggled .main .candidate-list .candidate .score.poor,
-.breezy-blind-toggled .modal-content .candidate-view-container .candidate-header .score,
-.breezy-blind-toggled .modal-content .candidate-view-container .candidate-header .score.poor,
-.breezy-blind-toggled .modal-content .candidate-view-container .candidate-header .score.good,
-.breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score,
-.breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score.good,
-.breezy-blind-toggled .modal-content .candidate-modal-view-container .candidate-list .candidate-card .score.poor,
-.breezy-blind-toggled .main .candidates-table table tr span.score,
-.breezy-blind-toggled .main .candidates-table table tr span.score.good,
-.breezy-blind-toggled .main .candidates-table table tr span.score.poor
-{
-    display:none;
-    color:black;
-    background:white;
-    -webkit-filter: blur(2px);
-}
-
-.breezy-blind-toggled .main .candidate-list .candidate,
-.breezy-blind-toggled .main .candidate-list .candidate.good,
-.breezy-blind-toggled .main .candidate-list .candidate.poor,
-.breezy-blind-toggled .main .candidates-table table .candidate,
-.breezy-blind-toggled .main .candidates-table table .candidate.good,
-.breezy-blind-toggled .main .candidates-table table .candidate.poor
-{
-    background:#FFF !important;
-}
-
-/*
-.breezy-blind-toggled .main .candidate-list .candidate .candidate-header .starred,
-.breezy-blind-toggled .main .candidate-list .candidate .candidate-footer .starred,
-.breezy-blind-toggled .main .candidate-list .candidate .candidate-header .fa-star,
-.breezy-blind-toggled .main .candidate-list .candidate .candidate-footer .fa-star
-{
-    color:#666 !important;
-    border:none;
-    text-shadow:none;
-    -webkit-text-stroke:none;
-    -webkit-text-stroke-width:0px;
-}
-*/
-
-.breezy-blind-toggled .candidate-conversation .activity-body {
-    -webkit-filter:none !important;
-}
-
-
-.breezy-blind-toggled .color-bars .good,
-.breezy-blind-toggled .color-bars .poor,
-.breezy-blind-toggled .main .candidate-list .candidate .candidate-color-bar-container .color-bars li .bar.poor,
-.breezy-blind-toggled .main .candidate-list .candidate .candidate-color-bar-container .color-bars li .bar.good {
-    color:#2980b9;
-    background:#2980b9;
-}
-
-.superhero-name { display:none; }
-.breezy-blind-toggled .original-name { display:none; }
-.breezy-blind-toggled .superhero-name { display:inline-block; }
