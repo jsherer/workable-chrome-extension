@@ -19,7 +19,8 @@
     -webkit-filter: blur(3px) grayscale(100%);    
 }
 .workable-blind-toggled .rating-summary,
-.workable-blind-toggled .rating-widget {
+.workable-blind-toggled .rating-widget,
+.workable-blind-toggled .timeline__icon {
     visibility:hidden;
 }
 .workable-blind-toggled .icon-thumb-down,
