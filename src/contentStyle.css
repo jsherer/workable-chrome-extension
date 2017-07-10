@@ -10,6 +10,7 @@
     opacity:0;
 }
 
+.workable-blind-toggled .profile__subsection--contact-details .js-highlight,
 .workable-blind-toggled .avatar-mini,
 .workable-blind-toggled .avatar-small,
 .workable-blind-toggled .avatar-medium,

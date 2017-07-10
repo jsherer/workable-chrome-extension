@@ -3,7 +3,7 @@
 
   "name": "Workable Blind",
   "description": "Toggle visibility of scorecards and comments of Workable to help combat group bias during hiring.",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "icons": {
     "16": "assets/icon16.png",
@@ -25,7 +25,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://zapier.workable.com/*"],
+      "matches": ["*://*.workable.com/*"],
       "css": ["contentStyle.css"],
       "js": ["libs/jquery.min.js", "libs/md5.js", "contentScript.js"]
     }
