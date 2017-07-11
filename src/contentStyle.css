@@ -24,9 +24,9 @@
 .workable-blind-toggled .timeline__icon {
     visibility:hidden;
 }
-.workable-blind-toggled .icon-thumb-down,
-.workable-blind-toggled .icon-thumb-up,
-.workable-blind-toggled .icon-definitely {
+.workable-blind-toggled :not(.rating-form) .icon-thumb-down,
+.workable-blind-toggled :not(.rating-form) .icon-thumb-up,
+.workable-blind-toggled :not(.rating-form) .icon-definitely {
     display:none;
 }
 
