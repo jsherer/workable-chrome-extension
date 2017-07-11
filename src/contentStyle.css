@@ -17,7 +17,7 @@
 .workable-blind-toggled .avatar-large,
 .workable-blind-toggled .avatar-jumbo,
 .workable-blind-toggled .search-result__container img {
-    -webkit-filter: blur(3px) grayscale(100%);    
+    -webkit-filter: blur(3px) grayscale(100%);
 }
 .workable-blind-toggled .rating-summary,
 .workable-blind-toggled .rating-widget,
@@ -25,7 +25,8 @@
     visibility:hidden;
 }
 .workable-blind-toggled .icon-thumb-down,
-.workable-blind-toggled .icon-thumb-up {
+.workable-blind-toggled .icon-thumb-up,
+.workable-blind-toggled .icon-definitely {
     display:none;
 }
 
