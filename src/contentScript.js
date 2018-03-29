@@ -62,7 +62,7 @@
       }
       var stage = $('.stage--current .stage__label').text();
 
-      $('.candidate').filter(':not([data-x])').each(function(){
+      var ensureUI = function(){
         var el = $(this);
         el.attr('data-x', 'yes');
 
@@ -76,23 +76,33 @@
             // has seen
             if(!el.hasClass(seencls)){
                 el.addClass(seencls);
+                var span = $('<span/>').addClass('reviewed').text('Reviewed!');
+                el.append(span);
             }
           } else {
             // has not seen
             if(!el.hasClass(notcls)){
                 el.addClass(notcls);
+            }
 
+            var b = el.find('> button');
+            if(!b.length){
                 var b = $('<button/>').text('Reviewed?');
                 b.click(function(){
                     el.removeClass(notcls).addClass(seencls);
                     localStorage.setItem(key, 'true');
+                    var span = $('<span/>').addClass('reviewed').text('Reviewed!');
+                    el.append(span);
                     b.remove();
                 });
                 el.append(b);
             }
           }
         }
-      });
+      }
+
+      $('.candidate').filter(':not([data-x])').each(ensureUI);
+      $('.candidate--selected').filter('[data-x]').each(ensureUI);
   }
 
   function init() {

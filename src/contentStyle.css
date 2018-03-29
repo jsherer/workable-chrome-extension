@@ -51,3 +51,43 @@
     z-index:1000;
     -webkit-filter: blur(2px);
 }
+
+
+.candidate--has-not-seen-for-stage span.reviewed,
+.candidate--has-seen-for-stage span.reviewed,
+.candidate--has-seen-for-stage button,
+.candidate--has-not-seen-for-stage button { 
+    display:none;
+}
+
+.workable-blind-toggled .candidate--has-seen-for-stage button,
+.workable-blind-toggled .candidate--has-not-seen-for-stage button { 
+    display:inline;
+}
+
+.workable-blind-toggled .candidate--has-not-seen-for-stage span.reviewed {
+    display:none;
+}
+
+.workable-blind-toggled .candidate--has-seen-for-stage span.reviewed {
+    display:inline;
+    float:right;
+}
+
+.workable-blind-toggled .candidate--has-not-seen-for-stage button {
+    float:right;
+    margin-top:10px;
+    border:1px solid #CCC;
+}
+
+.workable-blind-toggled .candidate--has-seen-for-stage {
+    opacity: 0.75;
+}
+
+.workable-blind-toggled .candidate--has-seen-for-stage button {
+    display: none;
+}
+
+.workable-blind-toggled .candidate--has-seen-for-stage .candidate__info h2.candidate__name a {
+    color: #AAA;
+}
